@@ -59,6 +59,11 @@ body {
   cursor: pointer;
   position: relative;
 }
+.login a{
+  text-align: end;
+  text-decoration: none;
+  color: #994f55;
+}
 
 /*intro section*/
 .card {
@@ -120,4 +125,23 @@ small .neon:hover{
 }
 .card:hover img{
     transform: scale(1.02);
+}
+/*Features*/
+.feature{
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+
+}
+.info-card{
+  background-color: #994f55;
+  width: 300px;
+  padding: 15px;
+  border-radius: 20px;
+}
+.info-card img{
+  border-radius: 15px;
+  margin-left: -10px;
+  width: 20rem;
+  height: 10rem;
 }
