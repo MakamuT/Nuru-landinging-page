@@ -59,6 +59,11 @@ body {
   cursor: pointer;
   position: relative;
 }
+.login a{
+  text-align: end;
+  text-decoration: none;
+  color: #994f55;
+}
 
 /*intro section*/
 .card {
@@ -121,6 +126,25 @@ small .neon:hover{
 .card:hover img{
     transform: scale(1.02);
 }
+/*Features*/
+.feature{
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+
+}
+.info-card{
+  background-color: #994f55;
+  width: 300px;
+  padding: 15px;
+  border-radius: 20px;
+}
+.info-card img{
+  border-radius: 15px;
+  margin-left: -10px;
+  width: 20rem;
+  height: 10rem;
+}
 
 #about-container{
 display: flex;
@@ -136,9 +160,8 @@ border-radius: 25px;
     background-color: #fff;
     padding: 20px 6px;
     margin: 20px;
-    
-
-}
+    border-radius: 25px;
+    }
 .about h1{
     margin: auto;
 }
@@ -147,10 +170,10 @@ border-radius: 25px;
   flex-wrap: nowrap; /* Ensures content stays on one line */
   align-items: center; /* Aligns text vertically */
   max-width: 80%;
-  margin: 0 auto; /* Centers the section horizontally */
+  margin: auto; /* Centers the section horizontally */
   background-color: #f2f2f2;
-  border-radius: 25px;
   justify-content: space-evenly;
+  
 }
 .about-content img{
     border-radius: 50%;
@@ -163,4 +186,3 @@ border-radius: 25px;
   padding-left: 20px; /* Adds space between image and text */
   font-size: 16px;
   line-height: 1.5; /* Improves text readability */
-}
