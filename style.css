@@ -69,7 +69,6 @@ body {
   box-sizing: border-box;
 }
 .nav-mid a:hover {
-  font-size: 10px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -211,7 +210,7 @@ small .neon:hover{
 }
 
 .info-card img{
-  border-radius: 25px;
+  border-radius: 2px;
   margin-left: 10px;
   width: 250px;
   height: 10rem;
