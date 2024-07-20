@@ -65,8 +65,7 @@ body {
   box-sizing: border-box;
 }
 .nav-mid a:hover {
-  border-bottom: 5px solid #f0be90;
-  transition: -5s;
+  font-size: 10px;
 }
 
 .nav-propic {
@@ -85,18 +84,21 @@ body {
 
 /*intro section*/
 .card {
-  width: 900px;
-  background-color: #FFFFFF;
+  max-width: 900px;
+  background-color: #994f55;
   border-radius: 14px;
   display: flex;
   cursor: pointer;
-  margin-left: 150px;
   margin-top: 70px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
 }
 #intro{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  height: 100%;
+  
 }
 #intro img{
     padding: 10px 65px;
@@ -125,20 +127,20 @@ small{
 small a{
     display: flex;
     flex-direction: column;
-    color: #994f55;
+    color: #fbfaf2;
     font-size: 25px;
     text-decoration: none;
 }
 small .fa-solid{
     margin-left: 70px;
-    color: #FFFFFF;
+    color: #994f55;
     font-size: 40px;
 }
 
 small .neon{
-    text-shadow: 0 0 .5rem #dc9858,
-    0 0 1rem #dc9858,
-    0 0 1.5rem #dc9858,
+    text-shadow: 0 0 .5rem #fff,
+    0 0 1rem #fff,
+    0 0 1.5rem #AD5F65,
     0 0 2.5rem #AD5F65,
     0 0 4rem #AD5F65,
     0 0 5.5rem #AD5F65,
@@ -157,9 +159,12 @@ small .neon:hover{
 /*Features*/
 #features{
   padding: 20px 6px;
+  max-height: 100vh;
 }
 #features h1{
   text-align: center;
+  margin-top:25px;
+  font-size:xx-large;
 }
 /* #features{
   display: flex;
@@ -169,23 +174,42 @@ small .neon:hover{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 20px 6px;
+  /* padding: 20px 6px; */
 
 }
 
 .info-card{
-  background-color: #994f55;
-  width: 300px;
-  padding: 15px;
-  border-radius: 20px;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+	width: 300px;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% auto;
+  background-color: #994E54;
+  padding: 50px;
+  border-radius: 25px;
+  justify-content:space-evenly;
+  box-sizing: border-box;
 }
 
 .info-card img{
   border-radius: 25px;
-  margin-left: -10px;
-  width: 20rem;
+  margin-left: 10px;
+  width: 250px;
   height: 10rem;
+}
+.info-card h2{
+  text-align: center;
+  color: #f2f2f2;
+}
+.info-card p{
+  margin: 5px 0 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #f2f2f2;
+  text-align: center;
+  transition: transform 0.8s ease-in-out;
 }
 
 /* ---------------------------about section------------------------ */
@@ -245,12 +269,12 @@ small .neon:hover{
 
 .team-container{
   display:flex;
-  /* max-width: 80%; */
-  /* align-items: center; */
 	flex-wrap: wrap;
 	justify-content: space-a;
 	gap: 50px;
 	padding-bottom: 10px;
+  /* max-width: 80%; */
+  /* align-items: center; */
   /* box-sizing: border-box; */
 }
 
@@ -347,4 +371,77 @@ span{
   .team-container {
     flex-direction: column; /* Show team cards in a column */
   }
+}
+.foot-container{
+  max-width: 1170px;
+  margin: auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+background-color: #994E54;
+padding: 70px 0;
+}
+.col{
+  width: 25%;
+  padding: 0 15px;
+}
+.col h4{
+  font-size:18px;
+  color:#f2f2f2;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #f0be90;
+  display: block;
+  transition: all 0.8s ease;
+}
+.col ul li a:hover{
+  color: #f2f2f2;
+  padding-left: 8px;
+}
+.col .footer-social a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 40px;
+  color: #f2f2f2;
+  transition: all 0.5s ease;
+}
+.col .footer-social a:hover{
+  color: #333;
+  background-color: #f2f2f2;
+}
+.footer-social h4{
+  color: #f2f2f2;
 }
