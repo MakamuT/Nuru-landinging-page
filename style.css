@@ -230,7 +230,6 @@ small .neon:hover {
   .feature {
     display: flex;
     flex-direction: column;
-    gap: 0;
   }
 
   .info-card {
