@@ -404,6 +404,8 @@ span {
   }
 
   .card {
+    display: flex;
+    flex-direction: column;
     width: 80%; /* Reduce hero card width */
     margin-left: auto;
     margin-right: auto; /* Center the card horizontally */
