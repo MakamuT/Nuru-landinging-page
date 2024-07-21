@@ -185,13 +185,27 @@ small .neon:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  gap: 5px;
+  overflow-x: auto;
   /* padding: 20px 6px; */
 }
-
+.feature::-webkit-scrollbar{
+  width: 15px;
+  
+}
+.feature::-webkit-scrollbar-track{
+  background: #d47c6f;
+  border-radius: 20px;
+  cursor: grab;
+}
+.feature::-webkit-scrollbar-thumb{
+  background: linear-gradient(90deg, #f0be90, #d47c6f, #dc9858);
+  border-radius: 23px;
+}
 .info-card {
   padding: 20px;
   width: 90%;
-  max-width: 300px;
+  min-width: 300px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
@@ -225,26 +239,11 @@ small .neon:hover {
   text-align: center;
   transition: transform 0.8s ease-in-out;
 }
-/*for mobile*/
-@media (min-width: 450px) {
-  .feature {
-    display: flex;
-    flex-direction: column;
-  }
 
-  .info-card {
-    width: 300px;
-  }
-
-  .info-card img {
-    width: 250px;
-    height: 10rem;
-  }
-}
 /* .info-card:hover img{
   transform:matrix(1.2,0,0,1.2,0,20px)
   
-} */
+  } */
 
 /* .info-card:hover p{
   font-size: 16px;
